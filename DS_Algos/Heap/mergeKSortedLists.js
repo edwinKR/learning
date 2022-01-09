@@ -31,13 +31,15 @@ const list2 = new LinkedListNode(1);
 list2.next = new LinkedListNode(3);
 list2.next.next = new LinkedListNode(4);
 
-const list3 = new LinkedListNode(2);
+const list3 = new LinkedListNode(2); 
 list3.next = new LinkedListNode(6);
 
 const input1 = [list1, list2, list3];
 console.log(input1)
 
 // Function to build merge lists
+
+// Approach: Create a Priority Queue using min Heap
 // TIME: O(n*log(k)) => 'k' is the number of lists | 'n' is the number of ALL the linked list nodes
 // SPACE: O(n) => 'n' is the size of the merged output linked list.
 const mergeKSortedLists = (lists) => {
@@ -106,9 +108,8 @@ class PriorityQueue {
             // parentIdx value is larger than childIdx.
             // Hence, need to swap parentIdx value and childIdx value.
             this.swap(parentIdx, idx);
+            this.bubbleUp(parentIdx);
         }
-
-        this.bubbleUp(parentIdx);
     }
 
     bubbleDown(idx) {
@@ -129,9 +130,8 @@ class PriorityQueue {
         // At this point, we have the right swapIdx to deal with.
         if(this.comparator(this.heap[idx], this.heap[swapIdx]) > 0) {
             this.swap(swapIdx, idx);
+            this.bubbleDown(swapIdx);
         }
-
-        this.bubbleDown(swapIdx);
     }
 
     swap(i, j) {
