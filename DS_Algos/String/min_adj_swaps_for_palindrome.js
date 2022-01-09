@@ -1,7 +1,7 @@
 /*
     Following is a problem asked frequently from Microsoft on the Online Assessments.
     
-    Given a string s, the task is to find out the minimum no of adjacent swaps required to make string s palindrome.
+    Given a string s, the task is to find out the minimum number of adjacent swaps required to make string s palindrome.
     If it is not possible, then return -1.
 
     Example 1:
@@ -24,7 +24,7 @@
     Big O:
         - Time: O(n^2)
         - Space: O(n)
-        
+
     Resources: 
         - GeekForGeeks (https://www.geeksforgeeks.org/count-minimum-swap-to-make-string-palindrome/)
         - LeetCode Discussion Board (https://leetcode.com/discuss/interview-question/351783/)
