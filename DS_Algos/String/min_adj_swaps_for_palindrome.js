@@ -21,6 +21,10 @@
         Output: 1
         Explanation: swap 't' with 'i' => "nitin"
 
+    Big O:
+        - Time: O(n^2)
+        - Space: O(n)
+        
     Resources: 
         - GeekForGeeks (https://www.geeksforgeeks.org/count-minimum-swap-to-make-string-palindrome/)
         - LeetCode Discussion Board (https://leetcode.com/discuss/interview-question/351783/)
