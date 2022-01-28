@@ -1,5 +1,5 @@
 /*
-    LEETCODE PROBLEM #139 Word Break
+    LEETCODE PROBLEM #560. Subarray Sum Equals K
     https://leetcode.com/problems/subarray-sum-equals-k/
 
     Time: O(n) | Space: O(n)
